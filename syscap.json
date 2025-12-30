@@ -1,0 +1,9 @@
+{
+  "syscap": [
+    "SystemCapability.Communication.NFC.Core",
+    "SystemCapability.Communication.NFC.Tag",
+    "SystemCapability.Communication.NFC.CardEmulation",
+    "SystemCapability.Sensors.MiscDevice",
+    "SystemCapability.ArkUI.ArkUI_ETS"
+  ]
+}

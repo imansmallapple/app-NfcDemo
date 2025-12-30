@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "module description"
+    },
+    {
+      "name": "SaveAbility_desc",
+      "value": "description"
+    },
+    {
+      "name": "SaveAbility_label",
+      "value": "NFC Emulator"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "module": {
+    "name": "save",
+    "type": "entry",
+    "description": "$string:module_desc",
+    "mainElement": "SaveAbility",
+    "deviceTypes": [
+      "wearable"
+    ],
+    "deliveryWithInstall": true,
+    "installationFree": false,
+    "pages": "$profile:main_pages",
+    "abilities": [
+      {
+        "name": "SaveAbility",
+        "srcEntry": "./ets/saveability/SaveAbility.ets",
+        "description": "$string:SaveAbility_desc",
+        "icon": "$media:contactless",
+        "label": "$string:SaveAbility_label",
+        "startWindowIcon": "$media:startIcon",
+        "startWindowBackground": "$color:start_window_background",
+        "exported": true,
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "ohos.want.action.home",
+              "ohos.nfc.tag.action.TAG_FOUND",
+              "ohos.nfc.cardemulation.action.HOST_APDU_SERVICE"
+            ],
+            "uris": [
+              {
+                "type": "tag-tech/NfcA"
+              },
+              {
+                "type": "tag-tech/IsoDep"
+              }
+            ]
+          }
+        ],
+        "metadata": [
+          {
+            "name": "bank-aid",
+            "value": "A0000000031010"
+          }
+        ]
+      }
+    ],
+    "extensionAbilities": [
+      {
+        "name": "SaveBackupAbility",
+        "srcEntry": "./ets/savebackupability/SaveBackupAbility.ets",
+        "type": "backup",
+        "exported": false,
+        "metadata": [
+          {
+            "name": "ohos.extension.backup",
+            "resource": "$profile:backup_config"
+          }
+        ],
+      }
+    ],
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.NFC_TAG",
+        "reason": "$string:app_name"
+      },
+      {
+        "name": "ohos.permission.NFC_CARD_EMULATION",
+        "reason": "$string:app_name"
+      },
+      {
+        "name": "ohos.permission.VIBRATE",
+        "reason": "$string:app_name"
+      }
+    ]
+  }
+}
