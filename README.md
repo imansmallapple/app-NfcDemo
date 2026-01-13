@@ -4,6 +4,11 @@
 
 This is a HarmonyOS NFC demonstration application project that implements NFC card read/write, Host Card Emulation (HCE), vibration feedback, and other features. The project adopts a multi-module architecture, divided into a main application module and a storage service module.
 
+## Screenshots
+![image1.jpg](images/image1.jpg)  
+![image2.jpg](images/image2.jpg)  
+![image3.jpg](images/image3.jpg)  
+
 ## Project Structure
 
 ```
@@ -190,7 +195,3 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 ## Support
 
 For questions or suggestions, please open an issue on the project repository.
-
----
-
-**Last Updated**: January 13, 2026
